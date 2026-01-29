@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 echo "Joindevops"
 
 Num1=100
