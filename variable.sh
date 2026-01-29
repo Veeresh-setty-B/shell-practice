@@ -10,7 +10,7 @@ sleep 20 &
 echo $user
 Sub=$((Num3-Num1))
 echo "$Sub"
-Multiply=$((Num3xNum1))
-echo "Multiply"
+Multiply=$((Num3*Num1))
+echo "multiply is $Multiply"
 echo "Current Script PID is $$"
 echo "Background PID $!"
