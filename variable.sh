@@ -1,17 +1,16 @@
 #!bin/bash
 echo "Joindevops"
 
-$Num1=100
-$Num2=200
-$Num3=300
-
-$sum=$(Num1+Num3)
-echo "$sum"
+Num1=100
+Num2=200
+Num3=300
+Sum=$((Num1+Num3))
+echo "sum is $Sum"
 sleep 20 &
 echo "$user"
-$sub=($Num3-$Num1)
-echo "$sub"
-$Multiply=$Num3x$Num1
+Sub=(($Num3-$Num1))
+echo "$Sub"
+Multiply=$((Num3xNum1))
 echo "Multiply"
-echo "$$"
-echo "$!"
+echo "Current Script PID is $$"
+echo "Background PID$!"
