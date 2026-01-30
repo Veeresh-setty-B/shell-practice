@@ -9,4 +9,6 @@ NUM1=$1
 
 if [ $NUM1 is -gt 20 ]; then
 ech0 "Given number: $NUM1 is greater than 20"
+else
+ech0 "Given number: $NUM1 is less than 20"
 fi
