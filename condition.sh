@@ -7,7 +7,7 @@ NUM1=$1
 ##-eq equal to 
 ##-ne not equal to
 
-if [ $NUM1 is -gt 20 ]; then
+if [ $NUM1 -gt 20 ]; then
 echo "Given number: $NUM1 is greater than 20"
 else
 echo "Given number: $NUM1 is less than 20"
