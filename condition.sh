@@ -8,7 +8,7 @@ NUM1=$1
 ##-ne not equal to
 
 if [ $NUM1 is -gt 20 ]; then
-ech0 "Given number: $NUM1 is greater than 20"
+echo "Given number: $NUM1 is greater than 20"
 else
-ech0 "Given number: $NUM1 is less than 20"
+echo "Given number: $NUM1 is less than 20"
 fi
