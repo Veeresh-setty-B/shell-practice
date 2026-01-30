@@ -16,8 +16,8 @@ echo "Multiplications of numbers is $MUL"
 
 ##Arrays
 FOOD=("BREAKFAST" "LUNCH" "COFFEE" "DINNER")
-echo "My food are ${FOOD [@]}"
-echo "Morning I eat ${FOOD [0]}"
-echo "Afternoon I eat ${FOOD [1]}"
-echo "Evening I drink ${FOOD [2]}"
-echo "Night I eat ${FOOD [3]}"
+echo "My food are ${FOOD[@]}"
+echo "Morning I eat ${FOOD[0]}"
+echo "Afternoon I eat ${FOOD[1]}"
+echo "Evening I drink ${FOOD[2]}"
+echo "Night I eat ${FOOD[3]}"
