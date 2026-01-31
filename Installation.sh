@@ -9,3 +9,12 @@ else
 echo "Installing nginx is Failure"
 exit 1
 fi
+
+if [$USERID eq 0 ]; then
+echo "Installing nodejs"
+dnf install nodejs -y
+exit 1
+else
+echo "Installation is Failure"
+exit 1
+fi
