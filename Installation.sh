@@ -7,10 +7,9 @@ echo "Installing nginx"
 dnf install nginx -y
 else
 echo "Installing nginx is Failure"
-exit 1
 fi
 
-if [$USERID eq 0 ]; then
+if [ $USERID -eq 0 ]; then
 echo "Installing nodejs"
 dnf install nodejs -y
 exit 1
