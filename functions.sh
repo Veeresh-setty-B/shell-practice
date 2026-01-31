@@ -20,10 +20,10 @@ VALIDATE(){
 }
 
 dnf install nginx -y &>> $LOGFILE
-VALIDATE $? "Installing success"
+VALIDATE $? "Nginx installing success"
 
 dnf install nodejs -y &>> $LOGFILE
-VALIDATE $? "Installing success"
+VALIDATE $? "Nodejs Installing success"
 
 dnf install mysql -y &>> $LOGFILE
-VALIDATE $? "Installing success"
+VALIDATE $? "Mysql Installing success"
