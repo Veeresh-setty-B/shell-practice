@@ -2,18 +2,19 @@
 
 USERID=$(id -u)
 
-if [ $USERID -eq 0 ]; then
-echo "Installing nginx"
-dnf install nginx -y
-else
+if [ $USERID -ne 0 ]; then
 echo "Installing nginx is Failure"
-fi
-
-if [ $USERID -eq 0 ]; then
-echo "Installing nodejs"
-dnf install nodejs -y
 exit 1
 else
+echo "Installing nginx"
+dnf install nginx -y
+fi
+
+if [ $USERID -ne 0 ]; then
 echo "Installation is Failure"
+exit 1
+else
+echo "Installing nodejs"
+dnf install nodejs -y
 exit 1
 fi
