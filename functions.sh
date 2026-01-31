@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 LOGFOLDER="/var/log/shell-script"
 LOGFILE="/var/log/shell-script/$0.log"
 
