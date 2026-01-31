@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if []; then
+if [ $USERID -eq 0]; then
 echo "Installing nginx"
 dnf install nginx -y
 else
