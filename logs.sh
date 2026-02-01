@@ -22,7 +22,7 @@ VALIDATE(){
     fi
 }
 
-for package=$@  ##give aurgument in common line
+for package in $@  ##give aurgument in common line
 do
     dnf install $package -y &>> $LOGFILE
     VALIDATE $? "$package installed"
