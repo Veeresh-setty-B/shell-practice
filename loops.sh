@@ -22,7 +22,8 @@ do
     if [ $? -ne 0 ]; then
     echo "$package is already installed"
     exit 1
-    fi
+    else
     dnf install $package -y
     VALIDATE $? "Installing $package"
+    fi
 done
