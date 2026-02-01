@@ -1,6 +1,8 @@
 #!/bin/bash
 
 USERID=$(id -u)
+LOGFOLDER="/var/log/shell-script"
+LOGFILE="$LOGFOLDER/$0.txt"
 
 if [ $USERID -ne 0 ]; then
     echo "Run the command with ROOt user"
@@ -16,13 +18,16 @@ VALIDATE(){
     echo "$2 : Success"
     fi
     }
+
+    mkdir -p $LOGFOLDER
+
 for package in $@
 do
-    dnf list installed $package
+    dnf list installed $package &>> $LOGFILE
     if [ $? -eq 0 ]; then
     echo "$package is already installed"
     else
-    dnf install $package -y
+    dnf install $package -y &>> $LOGFILE
     VALIDATE $? "Installing $package"
     fi
 done
