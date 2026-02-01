@@ -22,7 +22,7 @@ VALIDATE(){
     fi
 }
 
-dnf install nginxxx -y &>> $LOGFILE
+dnf install nginx -y &>> $LOGFILE
 VALIDATE $? "Nginx installing success"
 
 dnf install nodejs -y &>> $LOGFILE
