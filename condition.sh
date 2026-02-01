@@ -15,5 +15,3 @@ echo "Given number: $NUM1 is equal to 20"
 else 
 echo "Given number: $NUM1 is less than 20"
 fi
-
-
