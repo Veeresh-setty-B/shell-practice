@@ -18,6 +18,12 @@ VALIDATE(){
     }
 for package in $@
 do
+    dnf list installed $package
+
+    if [ $? -ne 0 ]; then
+    echo "$package is already installed"
+    exit 1
+    fi
     dnf install $@ -y
     VALIDATE $? "Installing $package"
 done
