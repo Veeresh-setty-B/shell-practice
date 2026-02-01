@@ -2,7 +2,7 @@
 
 USERID=$(ip -u)
 
-if ($USERID -ne 0)
+if ($USERID -ne 0); then
     echo "Run the command with ROOt user"
 else
     echo "Installing"
