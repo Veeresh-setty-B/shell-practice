@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=$(ID -u)
+USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
     echo "Run the command with ROOt user"
